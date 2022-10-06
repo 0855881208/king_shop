@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\Web\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -205,3 +206,6 @@ Route::prefix('admins')->group(function(){
 
 });
 
+Route::prefix('/')->group(function(){
+   Route::get('/',[HomeController::class, 'index'])->name('web.home');
+});
