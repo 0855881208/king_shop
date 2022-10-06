@@ -17,13 +17,19 @@
     <link rel="stylesheet" href="{{asset('assets/css/templatemo.css')}}">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
-    <!--
 
-    TemplateMo 561 Purple Buzz
+    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
 
-    https://templatemo.com/tm-561-purple-buzz
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
 
-    -->
+
+    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
+
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 
 <body>
@@ -32,7 +38,7 @@
     <div class="container d-flex justify-content-between align-items-center">
         <a class="navbar-brand h1" href="index.html">
             <i class='bx bx-buildings bx-sm text-dark'></i>
-            <span class="text-dark h4">Purple</span> <span class="text-primary h4">Buzz</span>
+            <span class="text-dark h4">King</span> <span class="text-primary h4">Shop</span>
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,7 +48,7 @@
             <div class="flex-fill mx-xl-5 mb-2">
                 <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                     <li class="nav-item">
-                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                        <a class="nav-link btn-outline-primary rounded-pill px-3 {{request()->getPathInfo()=='/' ? 'active' : '' }}" href="{{route('web.home')}}">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
@@ -146,41 +152,143 @@
 </div>
 <!-- End Banner Hero -->
 
+<div class="site-wrap">
+    <div class="site-section site-section-sm site-blocks-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+                    <div class="icon mr-4 align-self-start">
+                        <span class="icon-truck"></span>
+                    </div>
+                    <div class="text">
+                        <h2 class="text-uppercase">Free Shipping</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon mr-4 align-self-start">
+                        <span class="icon-refresh2"></span>
+                    </div>
+                    <div class="text">
+                        <h2 class="text-uppercase">Free Returns</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon mr-4 align-self-start">
+                        <span class="icon-help"></span>
+                    </div>
+                    <div class="text">
+                        <h2 class="text-uppercase">Customer Support</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Start Recent Work -->
+<section class="py-5 mb-5">
+    <div class="container">
+        <div class="recent-work-header row text-center pb-5">
+            <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Category</h2>
+        </div>
+        <div class="row gy-5 g-lg-5 mb-4">
 
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-01.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Social Media</h3>
+                            <p class="card-text">Ullamco laboris nisi ut aliquip ex</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-02.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Web Marketing</h3>
+                            <p class="card-text">Psum officia anim id est laborum.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-03.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">R & D</h3>
+                            <p class="card-text">Sum dolor sit consencutur</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-04.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Public Relation</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-05.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Branding</h3>
+                            <p class="card-text">Put enim ad minim veniam</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="assets/img/recent-work-06.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Creative Design</h3>
+                            <p class="card-text">Mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+        </div>
+    </div>
+</section>
+<!-- End Recent Work -->
 <!-- Start Service -->
 <section class="service-wrapper py-3">
     <div class="container-fluid pb-3">
         <div class="row">
-            <h2 class="h2 text-center col-12 py-5 semi-bold-600">Services</h2>
+            <h2 class="h2 text-center col-12 py-5 semi-bold-600">Selling</h2>
             <div class="service-header col-2 col-lg-3 text-end light-300">
                 <i class='bx bx-gift h3 mt-1'></i>
             </div>
             <div class="service-heading col-10 col-lg-9 text-start float-end light-300">
-                <h2 class="h3 pb-4 typo-space-line">Make Success for future</h2>
+                <h2 class="h3 pb-4 typo-space-line">Products that sell a lot</h2>
             </div>
-        </div>
-        <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
-            You are free to use this template for your commercial or business websites. You are not allowed to re-distribute this template ZIP file on any template collection websites. It is too easy to illegally copy and repost this template.
-        </p>
-    </div>
-
-    <div class="service-tag py-5 bg-secondary">
-        <div class="col-md-12">
-            <ul class="nav d-flex justify-content-center">
-                <li class="nav-item mx-lg-4">
-                    <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".project">All</a>
-                </li>
-                <li class="nav-item mx-lg-4">
-                    <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".graphic">Graphics</a>
-                </li>
-                <li class="filter-btn nav-item mx-lg-4">
-                    <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".ui">UI/UX</a>
-                </li>
-                <li class="nav-item mx-lg-4">
-                    <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".branding">Branding</a>
-                </li>
-            </ul>
         </div>
     </div>
 
@@ -320,99 +428,6 @@
     </div>
 </section>
 <!-- End View Work -->
-
-<!-- Start Recent Work -->
-<section class="py-5 mb-5">
-    <div class="container">
-        <div class="recent-work-header row text-center pb-5">
-            <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Recent Works</h2>
-        </div>
-        <div class="row gy-5 g-lg-5 mb-4">
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-01.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">Social Media</h3>
-                            <p class="card-text">Ullamco laboris nisi ut aliquip ex</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-02.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">Web Marketing</h3>
-                            <p class="card-text">Psum officia anim id est laborum.</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-03.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">R & D</h3>
-                            <p class="card-text">Sum dolor sit consencutur</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-04.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">Public Relation</h3>
-                            <p class="card-text">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-05.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">Branding</h3>
-                            <p class="card-text">Put enim ad minim veniam</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-            <!-- Start Recent Work -->
-            <div class="col-md-4 mb-3">
-                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                    <img class="recent-work-img card-img" src="assets/img/recent-work-06.jpg" alt="Card image">
-                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                            <h3 class="card-title light-300">Creative Design</h3>
-                            <p class="card-text">Mollit anim id est laborum.</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Recent Work -->
-
-        </div>
-    </div>
-</section>
-<!-- End Recent Work -->
-
-
 
 <!-- Start Footer -->
 <footer class="bg-secondary pt-4">
@@ -569,7 +584,15 @@
 <script src="{{asset('assets/js/templatemo.js')}}"></script>
 <!-- Custom -->
 <script src="{{asset('assets/js/custom.js')}}"></script>
+<script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('js/aos.js')}}"></script>
 
+<script src="{{asset('js/main.js')}}"></script>
 </body>
 
 </html>
