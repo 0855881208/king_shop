@@ -91,4 +91,9 @@ class ProductService
         $dataCreate['category_ids'] = $request->category_ids ?? [];
         return $dataCreate;
     }
+
+    public function getRandProduct()
+    {
+        return $this->productRepository->all()->random(8);
+    }
 }
