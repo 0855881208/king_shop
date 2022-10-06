@@ -42,8 +42,8 @@ class CategoryService
     public function update($request, $id)
     {
         $dataUpdate = $request->all();
-        $dataUpdate['parent_id'] = $request->parent_id ?? '';
-        $dataUpdate['name'] = $request->name ?? '';
+        $dataUpdate['parent_id'] = $request->has('parent_id')?$request->parent_id :null;
+        $dataUpdate['name'] = $request->has('name')? $request->name: '';
         return $this->categoryRepository->update($dataUpdate, $id);
     }
 

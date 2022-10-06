@@ -50,4 +50,9 @@ class Category extends Model
     {
         return $parentId ? $query->where('parent_id', $parentId) : null;
     }
+
+    public function childed()
+    {
+        return $this->hasMany(Category::class, 'parent_id', 'id');
+    }
 }
